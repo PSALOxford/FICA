@@ -1,0 +1,56 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:54:09 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.001_epsilon0.03_gurobi_seed50000_num_gen19_N_WDR80_load_scaling_factor2.0_ExactLHS_T1.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 20641 rows, 199 columns and 712516 nonzeros
+Model fingerprint: 0x1e996012
+Model has 19 quadratic objective terms
+Variable types: 119 continuous, 80 integer (80 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 1e+05]
+  Objective range  [2e+01, 5e+01]
+  QObjective range [5e-03, 2e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 1e+05]
+Presolve added 0 rows and 4 columns
+Presolve removed 3929 rows and 0 columns
+Presolve time: 0.90s
+Presolved: 16712 rows, 203 columns, 369299 nonzeros
+Presolved model has 19 quadratic objective terms
+Variable types: 123 continuous, 80 integer (80 binary)
+Found heuristic solution: objective 34175.787400
+
+Root relaxation: objective 3.345309e+04, 705 iterations, 0.17 seconds (0.29 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 33453.0850    0   80 34175.7874 33453.0850  2.11%     -    2s
+     0     0 33453.0850    0   80 34175.7874 33453.0850  2.11%     -    4s
+H    0     0                    34150.357896 33453.0850  2.04%     -    5s
+H    0     0                    34146.120568 33453.0850  2.03%     -    5s
+     0     0 33453.0850    0   80 34146.1206 33453.0850  2.03%     -    5s
+     0     0 33663.2824    0   80 34146.1206 33663.2824  1.41%     -    6s
+H    0     0                    34112.975243 33663.2824  1.32%     -    8s
+H    0     0                    34072.021896 33663.2824  1.20%     -    8s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 5
+  MIR: 131
+  RLT: 9
+  Relax-and-lift: 1
+
+Explored 1 nodes (1574 simplex iterations) in 8.42 seconds (8.27 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 5: 34072 34113 34146.1 ... 34175.8
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 3.407202189553e+04, best bound 3.406415659703e+04, gap 0.0231%

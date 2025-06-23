@@ -1,0 +1,52 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:46:17 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.001_epsilon0.03_gurobi_seed30000_num_gen19_N_WDR80_load_scaling_factor1_ExactLHS_T1.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 20641 rows, 199 columns and 712516 nonzeros
+Model fingerprint: 0xf2f4fa30
+Model has 19 quadratic objective terms
+Variable types: 119 continuous, 80 integer (80 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 1e+05]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [5e-03, 2e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 1e+05]
+Presolve added 0 rows and 4 columns
+Presolve removed 3948 rows and 0 columns
+Presolve time: 0.97s
+Presolved: 16693 rows, 203 columns, 369551 nonzeros
+Presolved model has 19 quadratic objective terms
+Variable types: 123 continuous, 80 integer (80 binary)
+Found heuristic solution: objective 30537.860852
+
+Root relaxation: objective 3.047712e+04, 1063 iterations, 0.25 seconds (0.44 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 30477.1237    0   80 30537.8609 30477.1237  0.20%     -    3s
+H    0     0                    30510.331523 30477.1237  0.11%     -    4s
+     0     0 30477.1237    0   80 30510.3315 30477.1237  0.11%     -    4s
+     0     0 30477.1237    0   80 30510.3315 30477.1237  0.11%     -    6s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 3
+  MIR: 105
+  RLT: 25
+  Relax-and-lift: 16
+
+Explored 1 nodes (1485 simplex iterations) in 7.79 seconds (7.28 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 2: 30510.3 30537.9 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 3.051033152324e+04, best bound 3.048218546980e+04, gap 0.0923%

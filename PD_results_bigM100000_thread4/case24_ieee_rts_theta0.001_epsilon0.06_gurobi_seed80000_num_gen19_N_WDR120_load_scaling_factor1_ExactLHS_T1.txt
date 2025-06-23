@@ -1,0 +1,76 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:48:46 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.001_epsilon0.06_gurobi_seed80000_num_gen19_N_WDR120_load_scaling_factor1_ExactLHS_T1.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 29801 rows, 279 columns and 1053156 nonzeros
+Model fingerprint: 0xfcbfa60d
+Model has 19 quadratic objective terms
+Variable types: 159 continuous, 120 integer (120 binary)
+Coefficient statistics:
+  Matrix range     [2e-05, 1e+05]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-04, 1e+05]
+Presolve added 0 rows and 4 columns
+Presolve removed 4814 rows and 0 columns
+Presolve time: 1.54s
+Presolved: 24987 rows, 283 columns, 553295 nonzeros
+Presolved model has 19 quadratic objective terms
+Variable types: 163 continuous, 120 integer (120 binary)
+Found heuristic solution: objective 28056.471693
+
+Root relaxation: objective 2.789187e+04, 2387 iterations, 0.99 seconds (1.64 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 27891.8661    0  120 28056.4717 27891.8661  0.59%     -    6s
+H    0     0                    27968.082125 27891.8661  0.27%     -    8s
+     0     0 27891.8661    0  120 27968.0821 27891.8661  0.27%     -    8s
+     0     0 27891.8661    0  120 27968.0821 27891.8661  0.27%     -   10s
+     0     0 27891.8661    0  120 27968.0821 27891.8661  0.27%     -   11s
+H    0     0                    27951.164351 27891.8661  0.21%     -   13s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   13s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   15s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   15s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   18s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   18s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   21s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   21s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   22s
+     0     0 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   22s
+     0     2 27891.8661    0  120 27951.1644 27891.8661  0.21%     -   23s
+     3     6     cutoff    2      27951.1644 27891.8661  0.21%  1531   25s
+H   29    30                    27949.779076 27891.8661  0.21%   609   29s
+    32    32     cutoff    8      27949.7791 27891.8661  0.21%   613   30s
+*   46    31              10    27948.733510 27891.8661  0.20%   484   31s
+H   47    31                    27947.157743 27891.8661  0.20%   474   31s
+    94    44 27934.2256    9   17 27947.1577 27891.8661  0.20%   335   36s
+   125    41     cutoff    9      27947.1577 27891.8661  0.20%   305   40s
+*  148    45              12    27945.051011 27891.8661  0.19%   287   40s
+H  151    45                    27942.419688 27891.8661  0.18%   282   40s
+   176    41     cutoff   14      27942.4197 27891.8661  0.18%   281   46s
+   222    42 27934.8773   10   16 27942.4197 27891.8661  0.18%   393   50s
+H  260    49                    27940.639554 27891.8661  0.17%   365   52s
+   350    43 27891.8661    7  108 27940.6396 27891.8661  0.17%   340   55s
+
+Cutting planes:
+  Implied bound: 9
+  MIR: 397
+  RLT: 1
+  Relax-and-lift: 13
+
+Explored 438 nodes (138265 simplex iterations) in 58.07 seconds (83.87 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 9: 27940.6 27942.4 27945.1 ... 28056.5
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 2.794063955367e+04, best bound 2.792169411674e+04, gap 0.0678%

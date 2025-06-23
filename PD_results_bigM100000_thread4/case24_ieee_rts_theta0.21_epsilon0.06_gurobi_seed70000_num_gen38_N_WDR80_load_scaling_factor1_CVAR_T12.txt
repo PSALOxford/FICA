@@ -1,0 +1,73 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 21:15:28 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.21_epsilon0.06_gurobi_seed70000_num_gen38_N_WDR80_load_scaling_factor1_CVAR_T12.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 183336 rows, 993 columns and 9175584 nonzeros
+Model fingerprint: 0xfe0f201a
+Model has 456 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [4e-07, 7e+01]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [5e-03, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-02, 9e+02]
+Presolve removed 49176 rows and 0 columns
+Presolve time: 2.10s
+Presolved: 134160 rows, 993 columns, 4727688 nonzeros
+Presolved model has 456 quadratic objective terms
+Ordering time: 0.79s
+
+Barrier statistics:
+ Dense cols : 945
+ Free vars  : 456
+ AA' NZ     : 5.041e+06
+ Factor NZ  : 6.468e+06 (roughly 100 MB of memory)
+ Factor Ops : 8.155e+08 (less than 1 second per iteration)
+ Threads    : 4
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.81728212e+08 -1.37546986e+08  3.60e+04 9.98e+02  9.70e+05    80s
+   1   1.57593547e+08  3.31437381e+08  2.40e+04 6.65e+02  6.52e+05    80s
+   2   1.54190722e+08 -1.27889362e+09  2.36e+04 6.54e+02  6.47e+05    80s
+   3   1.14126238e+08 -1.28493432e+09  1.89e+04 5.23e+02  5.41e+05    80s
+   4   2.35126351e+07 -3.65699090e+09  5.06e+03 1.40e+02  1.97e+05    80s
+   5   1.21911122e+06 -1.90481080e+09  2.14e+02 5.95e+00  2.05e+04    81s
+   6   4.11508728e+05 -4.54356836e+08  1.52e+01 4.20e-01  3.74e+03    81s
+   7   3.73733269e+05 -2.29244455e+08  5.94e+00 1.65e-01  1.79e+03    81s
+   8   3.68196288e+05 -1.94094235e+08  4.60e+00 1.28e-01  1.50e+03    81s
+   9   3.51253768e+05 -3.61774150e+07  4.66e-01 1.29e-02  2.72e+02    81s
+  10   3.51105634e+05 -3.36405231e+07  4.33e-01 1.20e-02  2.53e+02    81s
+  11   3.49863003e+05 -1.30189122e+07  1.64e-01 4.54e-03  9.94e+01    81s
+  12   3.47705264e+05  7.74393228e+04  2.83e-03 7.84e-05  2.00e+00    82s
+  13   3.32695367e+05  1.62413339e+05  1.47e-03 4.08e-05  1.26e+00    82s
+  14   3.25942038e+05  1.87629875e+05  1.00e-03 2.78e-05  1.02e+00    82s
+  15   3.20014642e+05  2.17156401e+05  6.75e-04 1.87e-05  7.62e-01    82s
+  16   3.14849718e+05  2.41967091e+05  4.25e-04 1.18e-05  5.40e-01    82s
+  17   3.10955917e+05  2.53891351e+05  1.71e-04 4.75e-06  4.23e-01    82s
+  18   3.05897731e+05  2.78261517e+05  3.88e-05 1.07e-06  2.05e-01    82s
+  19   3.03251384e+05  2.93019512e+05  2.58e-06 2.00e-07  7.57e-02    83s
+  20   3.02641821e+05  2.95394247e+05  1.40e-06 1.86e-07  5.36e-02    83s
+  21   3.02277409e+05  2.96786853e+05  9.13e-07 1.60e-07  4.06e-02    83s
+  22   3.01875000e+05  2.98312576e+05  4.47e-07 1.23e-07  2.64e-02    83s
+  23   3.01688726e+05  2.99016580e+05  2.76e-07 9.55e-08  1.98e-02    83s
+  24   3.01423937e+05  3.00017652e+05  1.11e-07 6.64e-08  1.04e-02    83s
+  25   3.01318862e+05  3.00409253e+05  5.14e-08 4.04e-08  6.73e-03    83s
+  26   3.01265201e+05  3.00601478e+05  2.79e-08 1.86e-08  4.91e-03    83s
+  27   3.01217437e+05  3.00771598e+05  1.60e-08 1.60e-08  3.30e-03    84s
+  28   3.01191108e+05  3.00865691e+05  9.49e-09 8.11e-09  2.41e-03    84s
+  29   3.01164954e+05  3.00959476e+05  2.91e-09 2.47e-09  1.52e-03    84s
+  30   3.01143550e+05  3.01034974e+05  2.84e-14 3.58e-11  8.04e-04    84s
+  31   3.01124878e+05  3.01100602e+05  4.26e-14 1.45e-11  1.80e-04    84s
+  32   3.01119432e+05  3.01119217e+05  4.26e-14 7.05e-11  1.59e-06    85s
+  33   3.01119384e+05  3.01119384e+05  3.77e-11 2.08e-11  1.62e-09    85s
+
+Barrier solved model in 33 iterations and 84.83 seconds (101.54 work units)
+Optimal objective 3.01119384e+05
+

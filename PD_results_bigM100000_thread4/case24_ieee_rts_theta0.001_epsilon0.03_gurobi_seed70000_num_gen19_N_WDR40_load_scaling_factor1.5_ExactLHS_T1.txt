@@ -1,0 +1,42 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:49:14 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.001_epsilon0.03_gurobi_seed70000_num_gen19_N_WDR40_load_scaling_factor1.5_ExactLHS_T1.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 11481 rows, 119 columns and 371876 nonzeros
+Model fingerprint: 0xeb177162
+Model has 19 quadratic objective terms
+Variable types: 79 continuous, 40 integer (40 binary)
+Coefficient statistics:
+  Matrix range     [5e-06, 1e+05]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-05, 1e+05]
+Presolve added 0 rows and 8 columns
+Presolve removed 3097 rows and 0 columns
+Presolve time: 0.79s
+Presolved: 8384 rows, 127 columns, 218614 nonzeros
+Presolved model has 19 quadratic objective terms
+Variable types: 83 continuous, 44 integer (41 binary)
+Found heuristic solution: objective 47474.899133
+
+Root relaxation: interrupted, 3944 iterations, 0.54 seconds (1.09 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0          -    0      47474.8991 47428.8592  0.10%     -    1s
+
+Explored 1 nodes (3944 simplex iterations) in 1.51 seconds (2.65 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 1: 47474.9 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 4.747489913274e+04, best bound 4.742885915079e+04, gap 0.0970%

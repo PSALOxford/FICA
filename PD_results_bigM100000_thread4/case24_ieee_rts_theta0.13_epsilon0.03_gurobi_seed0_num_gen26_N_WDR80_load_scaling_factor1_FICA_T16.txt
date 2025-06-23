@@ -1,0 +1,27 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:52:46 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.13_epsilon0.03_gurobi_seed0_num_gen26_N_WDR80_load_scaling_factor1_FICA_T16.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 144096 rows, 913 columns and 9095808 nonzeros
+Model fingerprint: 0x9992a029
+Model has 416 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [4e-06, 5e+01]
+  Objective range  [3e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [7e-03, 9e+02]
+Presolve removed 125328 rows and 0 columns
+Presolve time: 1.05s
+Presolved: 18768 rows, 913 columns, 836334 nonzeros
+Presolved model has 416 quadratic objective terms
+
+Barrier performed 0 iterations in 1.97 seconds (3.11 work units)
+Optimization interrupted
+

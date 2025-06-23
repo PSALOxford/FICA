@@ -1,0 +1,46 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 09:06:16 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.13_epsilon0.03_gurobi_seed40000_num_gen13_N_WDR80_load_scaling_factor1_FICA_T30.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 249120 rows, 861 columns and 10551120 nonzeros
+Model fingerprint: 0x6081d1a9
+Model has 390 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [5e-06, 7e+01]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-02, 9e+02]
+Presolve removed 203081 rows and 0 columns
+Presolve time: 1.49s
+Presolved: 46039 rows, 861 columns, 1327365 nonzeros
+Presolved model has 390 quadratic objective terms
+Ordering time: 6.23s
+Elapsed ordering time = 6s
+Elapsed ordering time = 10s
+Ordering time: 11.93s
+
+Barrier statistics:
+ Dense cols : 81
+ AA' NZ     : 3.521e+07
+ Factor NZ  : 3.902e+07 (roughly 300 MB of memory)
+ Factor Ops : 4.205e+10 (roughly 1 second per iteration)
+ Threads    : 4
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.39527485e+08 -1.26871498e+08  1.94e+04 1.00e+03  9.97e+05    31s
+   1   1.00509650e+08 -1.51365421e+08  9.72e+03 5.25e+02  5.32e+05    32s
+   2   8.03569506e+07 -3.52858655e+09  8.70e+03 4.40e+02  8.57e+05    32s
+   3   2.17249827e+07 -4.18245038e+09  2.62e+03 1.42e+02  3.65e+05    33s
+   4   4.76068985e+06 -2.93956583e+09  4.30e+02 2.93e+01  1.07e+05    34s
+
+Barrier performed 4 iterations in 33.67 seconds (18.99 work units)
+Optimization interrupted
+

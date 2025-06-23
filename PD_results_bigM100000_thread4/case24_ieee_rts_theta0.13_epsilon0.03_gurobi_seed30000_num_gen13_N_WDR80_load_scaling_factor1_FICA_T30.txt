@@ -1,0 +1,49 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 09:06:11 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.13_epsilon0.03_gurobi_seed30000_num_gen13_N_WDR80_load_scaling_factor1_FICA_T30.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 249120 rows, 861 columns and 10551120 nonzeros
+Model fingerprint: 0xa012c175
+Model has 390 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [2e-06, 8e+01]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [5e-03, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-02, 9e+02]
+Presolve removed 201541 rows and 0 columns
+Presolve time: 1.51s
+Presolved: 47579 rows, 861 columns, 1370485 nonzeros
+Presolved model has 390 quadratic objective terms
+Ordering time: 6.83s
+Elapsed ordering time = 7s
+Elapsed ordering time = 10s
+Elapsed ordering time = 11s
+Elapsed ordering time = 13s
+Ordering time: 14.91s
+
+Barrier statistics:
+ Dense cols : 81
+ AA' NZ     : 3.758e+07
+ Factor NZ  : 4.154e+07 (roughly 350 MB of memory)
+ Factor Ops : 4.615e+10 (roughly 1 second per iteration)
+ Threads    : 4
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.58570407e+08 -1.41229092e+08  1.94e+04 1.00e+03  9.97e+05    35s
+   1   1.05181232e+08 -1.51668325e+08  9.66e+03 5.22e+02  5.29e+05    36s
+   2   8.66149328e+07 -3.21979216e+09  8.72e+03 4.44e+02  8.04e+05    36s
+   3   2.78674436e+07 -3.45687075e+09  3.19e+03 1.67e+02  3.42e+05    37s
+   4   5.62281122e+06 -2.73645374e+09  4.98e+02 3.29e+01  1.01e+05    38s
+   5   2.75391439e+06 -1.78951375e+09  1.74e+02 1.34e+01  5.17e+04    38s
+
+Barrier performed 5 iterations in 38.44 seconds (22.38 work units)
+Optimization interrupted
+

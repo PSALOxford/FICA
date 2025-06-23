@@ -1,0 +1,53 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 03:46:28 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.001_epsilon0.03_gurobi_seed80000_num_gen19_N_WDR80_load_scaling_factor1_ExactLHS_T1.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 20641 rows, 199 columns and 712516 nonzeros
+Model fingerprint: 0x5962518c
+Model has 19 quadratic objective terms
+Variable types: 119 continuous, 80 integer (80 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 1e+05]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 1e+05]
+Presolve added 0 rows and 4 columns
+Presolve removed 3944 rows and 0 columns
+Presolve time: 0.90s
+Presolved: 16697 rows, 203 columns, 369322 nonzeros
+Presolved model has 19 quadratic objective terms
+Variable types: 123 continuous, 80 integer (80 binary)
+Found heuristic solution: objective 27990.681228
+
+Root relaxation: objective 2.789187e+04, 875 iterations, 0.23 seconds (0.37 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 27891.8661    0   80 27990.6812 27891.8661  0.35%     -    2s
+     0     0 27891.8661    0   80 27990.6812 27891.8661  0.35%     -    3s
+H    0     0                    27968.843620 27891.8661  0.28%     -    4s
+H    0     0                    27965.542933 27891.8661  0.26%     -    5s
+H    0     0                    27949.133091 27891.8661  0.20%     -    5s
+     0     0 27891.8661    0   80 27949.1331 27891.8661  0.20%     -    5s
+
+Cutting planes:
+  Implied bound: 3
+  MIR: 78
+  RLT: 54
+  Relax-and-lift: 73
+
+Explored 1 nodes (1385 simplex iterations) in 6.18 seconds (6.12 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 4: 27949.1 27965.5 27968.8 27990.7 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 2.794913309125e+04, best bound 2.794913309125e+04, gap 0.0000%

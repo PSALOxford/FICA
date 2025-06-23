@@ -1,0 +1,69 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Jun  1 09:47:53 2025
+
+Set parameter LogFile to value "/home/yihong/Coding/SFLA+ED/PD_results_bigM100000_thread4/case24_ieee_rts_theta0.21_epsilon0.06_gurobi_seed40000_num_gen13_N_WDR80_load_scaling_factor1_CVAR_T36.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 368208 rows, 1017 columns and 12940272 nonzeros
+Model fingerprint: 0xb7ecd26f
+Model has 468 quadratic objective terms
+Coefficient statistics:
+  Matrix range     [3e-06, 8e+01]
+  Objective range  [2e+01, 6e+01]
+  QObjective range [4e-03, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-02, 9e+02]
+Presolve removed 128943 rows and 0 columns
+Presolve time: 2.88s
+Presolved: 239265 rows, 1017 columns, 5082793 nonzeros
+Presolved model has 468 quadratic objective terms
+Elapsed ordering time = 12s
+Elapsed ordering time = 37s
+Ordering time: 89.54s
+Elapsed ordering time = 94s
+Elapsed ordering time = 106s
+Elapsed ordering time = 120s
+Elapsed ordering time = 134s
+Elapsed ordering time = 148s
+Elapsed ordering time = 161s
+Ordering time: 170.29s
+
+Barrier statistics:
+ Dense cols : 81
+ Free vars  : 468
+ AA' NZ     : 7.215e+08
+ Factor NZ  : 7.404e+08 (roughly 6.0 GB of memory)
+ Factor Ops : 2.858e+12 (roughly 30 seconds per iteration)
+ Threads    : 4
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.88612970e+08 -1.41790090e+08  1.25e+04 9.41e+02  9.77e+05   412s
+   1   1.27684129e+08 -5.19412549e+08  6.95e+03 5.24e+02  5.52e+05   434s
+   2   6.69705309e+07 -1.58623183e+10  4.17e+03 3.14e+02  5.01e+05   456s
+   3   7.70239085e+06 -1.55861205e+10  5.30e+02 3.99e+01  1.31e+05   479s
+   4   2.02409743e+06 -5.74111698e+09  8.04e+01 6.05e+00  3.10e+04   504s
+   5   1.05134989e+06 -1.31521882e+09  8.27e-01 6.22e-02  5.53e+03   529s
+   6   1.04098105e+06 -1.77489243e+08  4.13e-05 9.14e-07  7.43e+02   552s
+   7   1.03992501e+06 -2.40543417e+05  2.40e-07 1.03e-07  5.33e+00   577s
+   8   9.61633841e+05  6.00066372e+05  1.23e-08 3.29e-07  1.51e+00   611s
+   9   9.33882997e+05  7.74555292e+05  4.58e-09 1.23e-07  6.63e-01   636s
+  10   9.19102870e+05  8.56630779e+05  1.05e-09 2.80e-08  2.60e-01   664s
+  11   9.13455320e+05  8.88867737e+05  2.83e-10 7.58e-09  1.02e-01   697s
+  12   9.11924990e+05  8.97700770e+05  1.45e-10 3.88e-09  5.92e-02   722s
+  13   9.10563973e+05  9.05325360e+05  8.26e-12 2.22e-10  2.18e-02   755s
+  14   9.10367780e+05  9.06260810e+05  5.86e-14 5.70e-12  1.71e-02   782s
+  15   9.09980764e+05  9.09169056e+05  1.12e-10 1.74e-09  3.38e-03   810s
+  16   9.09907375e+05  9.09702254e+05  5.84e-12 8.99e-11  8.54e-04   834s
+  17   9.09901598e+05  9.09744697e+05  4.31e-12 6.63e-11  6.53e-04   861s
+  18   9.09886165e+05  9.09858145e+05  1.50e-10 2.89e-09  1.17e-04   888s
+  19   9.09882742e+05  9.09882338e+05  5.47e-11 1.11e-08  1.68e-06   913s
+  20   9.09882691e+05  9.09882690e+05  1.95e-09 2.46e-11  3.84e-09   939s
+
+Barrier solved model in 20 iterations and 939.19 seconds (936.37 work units)
+Optimal objective 9.09882691e+05
+
