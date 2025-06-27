@@ -1,6 +1,6 @@
 # FICA: Faster Inner Convex Approximation
 
-This repository contains codes for our paper ***FICA: Faster Inner Convex Approximation to Chance Constrained Grid Dispatch with Decision-Coupled Uncertainty***.
+This repository contains codes for our paper ***FICA: Faster Inner Convex Approximation of Chance Constrained Grid Dispatch with Decision-Coupled Uncertainty*** https://arxiv.org/abs/2506.18806.
 
 ## Installation Guideline
 1. git clone this repository.
@@ -63,4 +63,4 @@ This will create a `memory_usage.csv` file that records the computer memory usag
 
 ---
 If you find this repository helpful, please cite our paper:
-> Yihong Zhou, Hanbin Yang, Thomas Morstyn (2025). *FICA: Faster Inner Convex Approximation to Chance Constrained Grid Dispatch with Decision-Coupled Uncertainty*. Available at arXiv.
+> Yihong Zhou, Hanbin Yang, Thomas Morstyn (2025). *FICA: Faster Inner Convex Approximation of Chance Constrained Grid Dispatch with Decision-Coupled Uncertainty*. Available at arXiv https://arxiv.org/abs/2506.18806.
