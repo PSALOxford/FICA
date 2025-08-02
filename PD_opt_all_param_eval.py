@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from PD import solve_PD, check_JCC
 import pandapower as pp
+import pandapower.networks as ppnw
 from pandapower.pypower.makePTDF import makePTDF
 from pandapower.pd2ppc import _pd2ppc
 from WT_error_gen import WT_sce_gen
@@ -41,12 +42,12 @@ def solve_one_instance(param, save_path_root, bigM, thread):
         os.remove(result_dict_path)
     # ------------------
 
-    network_dict = {'case118': pp.networks.case118(),
-                    'case300': pp.networks.case300(),
-                    'case24_ieee_rts': pp.networks.case24_ieee_rts(),
-                    'case5': pp.networks.case5(),
-                    'case4gs': pp.networks.case4gs(),
-                    'case_ieee30': pp.networks.case_ieee30()}
+    network_dict = {'case118': ppnw.case118(),
+                    'case300': ppnw.case300(),
+                    'case24_ieee_rts': ppnw.case24_ieee_rts(),
+                    'case5': ppnw.case5(),
+                    'case4gs': ppnw.case4gs(),
+                    'case_ieee30': ppnw.case_ieee30()}
 
     seed = gurobi_seed
     rng = np.random.RandomState(seed)

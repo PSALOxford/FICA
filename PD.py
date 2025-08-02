@@ -1,8 +1,8 @@
 import numpy as np
 import pandapower as pp
+import pandapower.networks as ppnw
 from pandapower.pypower.makePTDF import makePTDF
 from pandapower.pd2ppc import _pd2ppc
-
 import os
 import gurobipy as gp
 from gurobipy import GRB
@@ -287,12 +287,12 @@ def solve_PD_instance(num_gen=38, num_WT=10, Tstart=0, norm_ord=1, T=24, method=
     log_file_name = None # the log file name
     #------------------
 
-    network_dict = {'case118': pp.networks.case118(),
-                    'case300': pp.networks.case300(),
-                    'case24_ieee_rts': pp.networks.case24_ieee_rts(),
-                    'case5': pp.networks.case5(),
-                    'case4gs': pp.networks.case4gs(),
-                    'case_ieee30': pp.networks.case_ieee30()}
+    network_dict = {'case118': ppnw.case118(),
+                    'case300': ppnw.case300(),
+                    'case24_ieee_rts': ppnw.case24_ieee_rts(),
+                    'case5': ppnw.case5(),
+                    'case4gs': ppnw.case4gs(),
+                    'case_ieee30': ppnw.case_ieee30()}
 
     seed = gurobi_seed
     rng = np.random.RandomState(seed)

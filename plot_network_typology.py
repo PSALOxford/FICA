@@ -1,7 +1,7 @@
 import numpy as np
 import pandapower as pp
 from pandapower.pd2ppc import _pd2ppc
-
+import pandapower.networks as ppnw
 import matplotlib.pyplot as plt
 import pandapower.plotting as plot
 from matplotlib.lines import Line2D
@@ -14,7 +14,7 @@ plt.rcParams.update({
 
 # -----------------------------------------------------
 # Load test network
-network = pp.networks.case24_ieee_rts()
+network = ppnw.case24_ieee_rts()
 pp.rundcpp(network)
 _, ppci = _pd2ppc(network)
 bus_info = ppci['bus']
